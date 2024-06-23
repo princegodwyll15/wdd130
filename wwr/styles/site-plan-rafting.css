@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cousine&display=swap');
+:root {
+    --paragraph-font: 'roboto', sans-serif;
+    --primary-color: #03045e;
+    --secondary-color: #C1DFF0;
+    --accent-color: #deaaff;
+    --additional-accent-color: #2D898B;
+    --heading-font: 'Open Sans', sans-serif;
+    --paragraph-or-default-font: 'roboto', sans-serif;
+    --navigation-background-color : #deaaff;
+    --navigation-link-color : #2D898B;
+    --navigation-hover-link-color : #C1DFF0#;
+    --navigation-hover-background-color :#88CCF1;
+
+  }
+  
+body {
+    font-family: var(--paragraph-font);
+    width: 960px;
+    padding: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+   padding: 20px;
+   background-color: var(--accent-color); 
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--navigation-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a{
+    display: block;
+    color: var(--navigation-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited{
+    color: var(--navigation-link-color);
+}
+
+nav a:hover{
+    color: var(--navigation-hover-link-color);
+    background-color: var(--navigation-hover-background-color);
+}
