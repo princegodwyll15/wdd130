@@ -55,7 +55,7 @@ header nav a {
   color: var(--additional-accent-color);
   text-decoration: none;
   text-align: center;
-  padding: 5px;
+  padding: 2%;
   width: 100px;
   border: 1px solid #ccc;
 }

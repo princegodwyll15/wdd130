@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form_container {
+    display: flex;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 237, 250);
+    width: 500px;
+}
+.form_container h3{
+    padding: 5%;
+    text-align: center;
+}
+
+.form_container input , label{
+    display: block;
+    padding: 5px;
+}
+
+.form_container input, textarea, select{
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+}
+
+.form_container select, button, textarea{
+    margin: 10px;
+}
+.form_container #q4{
+    background-color: blue;
+    color: aliceblue;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.form_container input[type = "submit"]{
+    background-color: blue;
+    outline: none;
+    border: none;
+    color: aliceblue;
+}
+
