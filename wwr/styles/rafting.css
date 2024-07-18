@@ -198,7 +198,7 @@ iframe {
 .form_container{
   font-size: 14;
   background-color: var(--secondary-color);
-  width: 450px;
+  width: 600px;
 }
 
 .form_container input{
@@ -226,7 +226,8 @@ iframe {
 }
 
 input[type="radio"] {
-  margin-top: 1px;
+  margin-top: 5px;
+  width: 220px;
   position: absolute;
   padding: 0;
   border: 1px solid #ccc;
