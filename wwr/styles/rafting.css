@@ -8,12 +8,14 @@
 :root {
     --paragraph-font: 'roboto', sans-serif;
     --primary-color: #03045e;
-    --secondary-color: #C1DFF0;
+    --secondary-color: #e9f1f5;
     --accent-color: #deaaff;
     --additional-accent-color: #fff;
+    --form_font: 'Courier New', Courier, monospace;
+    --additional_font: 'Courier New', Courier, monospace;
     --heading-font: 'Open Sans', sans-serif;
     --paragraph-or-default-font: 'roboto', sans-serif;
-    --navigation-background-color : #deaaff;
+    --navigation-background-color : #03045e;
     --navigation-link-color : #fff;
     --navigation-hover-link-color : #03045e;
     --navigation-hover-background-color :#fff;
@@ -22,7 +24,7 @@
 body {
     font-family: var(--paragraph-font);
     width: 960px;
-    padding: 20px;
+    padding: 5px;
 }
 
 p {
@@ -43,7 +45,7 @@ header {
 
 header img {
   padding: 5%;
-  height: 10rem;
+  height: 8rem;
   width: 10rem;
 }
 
@@ -163,3 +165,119 @@ footer{
   height:10%;
   width: 10%;
 } 
+
+/*this styles our contact_Us page*/
+main h3,h4{ 
+  padding: 10px;
+  margin-top: 2rem;
+}
+
+
+main p {
+  padding: 2px;
+}
+
+main li{
+  margin-left: 20px;
+}
+main #heading{
+  padding: 5px;
+  font-size: 30px;
+  font-weight: 700;
+}
+main h4{
+  margin-top: 2rem;
+}
+
+iframe {
+  border: 0;
+  padding: 5px;
+  background-color: var(--primary-color);
+}
+
+.form_container{
+  font-size: 14;
+  background-color: var(--secondary-color);
+  width: 450px;
+}
+
+.form_container input{
+  display: block;
+  font-weight: 400;
+  padding: 10px;
+  width: 400px;
+  margin: 10px;
+  outline: none;
+
+}
+
+.form_container label{
+  display: block;
+  margin: 10px;
+  /* margin-top: 2%; */
+  padding: 5px;
+}
+
+.form_container textarea{
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+}
+
+input[type="radio"] {
+  margin-top: 1px;
+  position: absolute;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  padding: 0;
+  cursor: pointer;
+  margin: -15px 0px 0px 13%;
+}
+
+.form_container button{
+  outline: none;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  width: 25%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.5rem;
+}
+
+.form_container button:hover{
+  cursor: pointer;
+}
+
+.radio_container{
+  background-color:var(--secondary-color);
+  width: 25%;
+  margin: 10px;
+}
+
+
+.contact_info_container{
+  width: auto;
+}
+
+.contact_details {
+  background-color:var(--secondary-color);
+  border-radius: 5px;
+  width: 25%;
+  padding: 5px;
+}
+
+.contact_details h4{
+  margin-top: 0;
+}
+
+
+
