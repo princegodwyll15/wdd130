@@ -11,8 +11,6 @@
     --secondary-color: #e9f1f5;
     --accent-color: #deaaff;
     --additional-accent-color: #fff;
-    --form_font: 'Courier New', Courier, monospace;
-    --additional_font: 'Courier New', Courier, monospace;
     --heading-font: 'Open Sans', sans-serif;
     --paragraph-or-default-font: 'roboto', sans-serif;
     --navigation-background-color : #03045e;
@@ -196,7 +194,6 @@ iframe {
 }
 
 .form_container{
-  font-size: 14;
   background-color: var(--secondary-color);
   width: 600px;
 }
