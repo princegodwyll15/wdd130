@@ -22,10 +22,13 @@
   
 body {
     font-family: var(--paragraph-font);
-    width: 960px;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
 }
-
+header, main, footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
 p {
   font-family: var(--paragraph-font);
 }
@@ -38,7 +41,7 @@ h1,h2,h3,h4,h5,h6 {
 header {
   background-color: var(--primary-color);
   display: grid;
-  grid-template-columns: 500px 1fr;
+  grid-template-columns: 1fr 1fr;
 	align-items: center;
 }
 
@@ -176,16 +179,23 @@ main p {
   padding: 2px;
 }
 
-main li{
-  margin-left: 20px;
-}
 main #heading{
   padding: 5px;
-  font-size: 30px;
   font-weight: 700;
+  color: var(--primary-color);
+  font-size: 25px;
+  font-variant: small-caps;
 }
 main h4{
   margin-top: 2rem;
+}
+
+/* this css code styles the form container and its element*/
+.form_map_container{
+  display: grid;
+  background-color: var(--secondary-color);
+  grid-template-columns: 1fr 2fr;
+  gap: 2em;
 }
 
 iframe {
@@ -196,87 +206,88 @@ iframe {
 
 .form_container{
   background-color: var(--secondary-color);
-  width: 600px;
+  width: 500px;
 }
 
 .form_container input{
-  display: block;
-  font-weight: 400;
-  padding: 10px;
-  width: 400px;
-  margin: 10px;
+  padding: 1em;
+  margin: 5px;
   outline: none;
-
+  border: none;
 }
 
-.form_container label{
-  display: block;
-  margin: 10px;
-  /* margin-top: 2%; */
-  padding: 5px;
+.form_container input:focus{
+  border: 1px solid var(--primary-color);
+}
+
+
+#email {
+  margin-left: 2.8em;
 }
 
 .form_container textarea{
-  width: 400px;
-  padding: 10px;
-  margin: 10px;
-  outline: none;
+  width: 280px;
 }
 
-input[type="radio"] {
-  margin-top: 5px;
-  width: 220px;
-  position: absolute;
-  padding: 0;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  cursor: pointer;
+.radio_container {
+  margin-bottom: 2em;
 }
 
-input[type="checkbox"] {
-  position: absolute;
-  padding: 0;
-  cursor: pointer;
-  margin: -15px 0px 0px 13%;
+.form_container #form_heading{
+  font-variant: small-caps;
 }
-
-.form_container button{
-  outline: none;
-  margin: 10px;
-  border: none;
-  border-radius: 5px;
-  font-weight: 700;
-  width: 25%;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 0.5rem;
-}
-
-.form_container button:hover{
-  cursor: pointer;
-}
-
-.radio_container{
-  background-color:var(--secondary-color);
-  width: 25%;
-  margin: 10px;
-}
-
 
 .contact_info_container{
-  width: auto;
+  display: grid;
+  padding: .5em;
+  margin: 20px 0px 20px 0px;
+  grid-template-columns: 1fr 2fr;
+  gap: 2em;
+  background-color:var(--secondary-color);
 }
 
+.contact_info_container h1, #form_heading{
+  color: var(--primary-color);
+  margin-top: .2em;
+  font-size: 25px;
+  font-variant: small-caps;
+}
+
+
 .contact_details {
-  background-color:var(--secondary-color);
+  background-color:var(--primary-color);
   border-radius: 5px;
-  width: 25%;
-  padding: 5px;
+  color: var(--additional-accent-color);
 }
 
 .contact_details h4{
+  color: var(--additional-accent-color);
   margin-top: 0;
 }
 
+.form_container button{
+  border: none;
+  outline: none;
+  padding: 1em;
+  color: var(--additional-accent-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
 
+/*this edit the three images and its elements*/
+.workers_img {
+  grid-column: 2;
+  grid-row: 1/5;
+}
+
+.workers_img img{
+  background-color: var(--primary-color);
+  padding: 5px;
+}
+
+figure {
+  margin: 0;
+  padding: .5em;
+  display: inline-block;
+}
 
