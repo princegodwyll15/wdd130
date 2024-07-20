@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cousine&display=swap');
 :root {
     --paragraph-font: 'roboto', sans-serif;
-    --primary-color: #03045e;
+    --primary-color:  #03045e;
     --secondary-color: #e9f1f5;
-    --accent-color: #deaaff;
+    --accent-color: #fa0707;
     --additional-accent-color: #fff;
     --heading-font: 'Open Sans', sans-serif;
     --paragraph-or-default-font: 'roboto', sans-serif;
@@ -25,8 +25,13 @@ body {
     margin: 0;
     padding: 0;
 }
-header, main, footer {
-  /* max-width: 960px; */
+
+header{
+  margin: 0 auto;
+}
+
+main{
+  max-width: 960px;
   margin: 0 auto;
 }
 p {
@@ -47,6 +52,7 @@ header {
 }
 
 header img {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), -3px -3px 5px rgba(0, 0, 0, 0.5);
   padding: 1em;
   height: 7rem;
   width: auto;
@@ -111,20 +117,19 @@ article p{
 
 .neat img {
   float: right;
-  width: 15%;
+  width: 20%;
   opacity: 1;
   height: auto;
 }
 
 .section1, .section2 {
-  background-color: var(--primary-color);
-  color: var(--additional-accent-color);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  background-color: var(--secondary-color);
   margin-top: 5%;
 }
 
 .section1 h2, .section2 h2{
   padding: 1%;
-  color: var(--additional-accent-color);
   text-align: center;
 }
 
@@ -147,6 +152,7 @@ article p{
 }
 
 .grid_container2 img{
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), -3px -3px 5px rgba(0, 0, 0, 0.5);
   width: 10em;
   height: auto;
 }
@@ -174,10 +180,18 @@ footer{
   justify-content:flex-end;
   align-items: center;
 }
+
 .navlinks img{
   height:10%;
+  cursor: pointer;
   width: 10%;
 } 
+
+.navlinks a{
+  position: absolute;
+  visibility: hidden;
+} 
+
 
 /*this styles our contact_Us page*/
 main h3,h4{ 
@@ -205,6 +219,8 @@ main h4{
 this css code styles the form container and its element*/
 .form_map_container{
   display: grid;
+  padding: 10px;
+  border: 5px solid var(--primary-color);
   flex-wrap: wrap;
   grid-auto-flow: column;
   background-color: var(--secondary-color);
@@ -214,13 +230,13 @@ this css code styles the form container and its element*/
 
 iframe {
   border: 0;
-  padding: 5px;
+  padding: 3px;
   background-color: var(--primary-color);
 }
 
 .form_container{
   background-color: var(--secondary-color);
-  width: 500px;
+  width: 450px;
 }
 
 .form_container input{
@@ -262,11 +278,15 @@ iframe {
 
 .contact_info_container h1, #form_heading{
   color: var(--primary-color);
-  margin-top: .2em;
-  font-size: 25px;
+  /* margin-top: .2em; */
+  font-size: 20px;
   font-variant: small-caps;
 }
 
+.contact_info_container p{
+  margin: 0;
+  padding: 0;
+}
 
 .contact_details {
   background-color:var(--primary-color);
@@ -325,7 +345,7 @@ figure {
 .trips_description img {
   padding: 4px;
   border-radius: 10px;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
 }
 
@@ -356,3 +376,15 @@ figure {
   color: green;
 
 }
+
+/* this styles the INDEX.HTML PAGE site */
+.background-image {
+  background-image: url('images/index.png');
+  background-size: cover;
+  background-position: center;
+  height: 150vh; /* Make the background image full height */
+  width: 100%; /* Make the background image full width */
+  position: relative; /* Position the background image relative to its parent */
+}
+
+
