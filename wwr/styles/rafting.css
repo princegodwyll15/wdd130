@@ -59,6 +59,7 @@ header nav {
 header nav a {
   color: var(--additional-accent-color);
   text-decoration: none;
+  font-size: 100%;
   text-align: center;
   padding: .5em;
   width: 7em;
@@ -89,26 +90,28 @@ nav a:hover{
   top: 0;
   padding: 10px;
   color: var(--additional-accent-color);
-  background-color: var(--primary-color);
   width: 100%;
 }
 
 article {
-  opacity: 0.7;
   color: var(--additional-accent-color);
   position: absolute;
   padding: 10px;
-  margin-left: 10%;
+  margin-left: 25%;
   border: 1px solid var(--additional-accent-color);
-  width: 80%;
+  width: 50%;
   height: auto;
   top: 30%;
-  background-color: var(--primary-color);
 }
+
+article p{
+  font-size: 70%;
+}
+
 
 .neat img {
   float: right;
-  width: 10%;
+  width: 15%;
   opacity: 1;
   height: auto;
 }
