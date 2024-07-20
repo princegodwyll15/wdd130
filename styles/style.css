@@ -79,10 +79,20 @@ footer{
     color: #fff;
 }
 
-header,.grid, footer {
+header {
     max-width: 840px;
     margin: 0 auto;
 }
+
+.grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 
 .grid {
     display: grid;
