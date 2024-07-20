@@ -136,8 +136,14 @@ article {
 }
 .grid_container2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+}
+
+.grid_container2 img{
+  width: 10em;
+  height: auto;
 }
 
 .img_container {
@@ -193,6 +199,8 @@ main h4{
 /* this css code styles the form container and its element*/
 .form_map_container{
   display: grid;
+  flex-wrap: wrap;
+  grid-auto-flow: column;
   background-color: var(--secondary-color);
   grid-template-columns: 1fr 2fr;
   gap: 2em;
@@ -217,7 +225,7 @@ iframe {
 }
 
 .form_container input:focus{
-  border: 1px solid var(--primary-color);
+  border: 2px solid var(--primary-color);
 }
 
 
