@@ -291,11 +291,6 @@ iframe {
   grid-row: 1/5;
 }
 
-.workers_img img{
-  background-color: var(--primary-color);
-  padding: 5px;
-}
-
 figure {
   margin: 0;
   padding: .5em;
