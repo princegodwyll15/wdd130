@@ -170,7 +170,7 @@ header nav {
 header nav a {
   color: var(--additional-accent-color);
   text-decoration: none;
-  transition: all ease 1s;
+  transition: all ease-out 1s;
   font-size: 100%;
   text-align: center;
   padding: 0.5em;
