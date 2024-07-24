@@ -1,44 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cousine&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cousine&display=swap");
 :root {
-    --paragraph-font: 'roboto', sans-serif;
-    --primary-color:  #03045e;
-    --secondary-color: #e9f1f5;
-    --accent-color: #fa0707;
-    --additional-accent-color: #fff;
-    --heading-font: 'Open Sans', sans-serif;
-    --paragraph-or-default-font: 'roboto', sans-serif;
-    --navigation-background-color : #03045e;
-    --navigation-link-color : #fff;
-    --navigation-hover-link-color : #03045e;
-    --navigation-hover-background-color :#fff;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-  }
-    
-  
-body {
-    font-family: var(--paragraph-font);
-    margin: 0;
-    padding: 0;
+  --paragraph-font: "roboto", sans-serif;
+  --primary-color: #03045e;
+  --secondary-color: #e9f1f5;
+  --accent-color: rgb(255, 31, 191);
+  --additional-accent-color: #fff;
+  --heading-font: "Open Sans", sans-serif;
+  --paragraph-or-default-font: "roboto", sans-serif;
+  --navigation-background-color: #03045e;
+  --navigation-link-color: #fff;
+  --navigation-hover-link-color: #03045e;
+  --navigation-hover-background-color: #fff;
 }
 
-header{
+/* this css styles the index.html of the spalsh rafting site */
+
+.main_form{ 
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 140px;
+}
+
+.main_form .form_head{
+  text-align: center;
+  font-variant: small-caps;
+  color: var(--accent-color);
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.main_form > form {
+  background-color: var(--primary-color);
+  color: var(--additional-accent-color);
+  padding: 1em;
+}
+
+.main_form > form > a{
+  font-size: 12px;
+  padding: 20px;
+  color: var(--additional-accent-color);
+}
+
+.main_form form > label{
+  padding: .2em;
+  font-size: 20px;
+  display: block;
+}
+
+.main_form input{
+  margin: 1%;
+  padding: 1em;
+  width: 100%;
+  min-width: 250px;
+}
+
+input:focus {
+  /* styles to apply when input is focused */
+  outline: none;
+  border: 2px solid var(--accent-color);
+  box-shadow: 0 0 8px var(--accent-color);
+}
+
+
+.main_form button{
+  display: block;
+  margin-top: 50px;
+  transition: all ease 1s;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1em;
+  width: 100%;
+  min-width: 150px;
+  color: var(--accent-color);
+  background-color: var(--additional-accent-color);
+}
+
+.main_form button:hover{
+  background-color: var(--accent-color);
+  color: var(--additional-accent-color);
+}
+
+
+.additional_content{
+  font-size: 100%;
+  display: flex;
+}
+
+.additional_content figure{
+  text-align: center;
+  height: 100px;
+  font-size: 13px;
+}
+
+.additional_content figcaption{
+  text-align: center;
+  width: 90%;
+}
+
+.additional_content img {
+ width: 90%;
+ padding: 5px;
+ background-color: var(--primary-color);
+}
+
+
+#index_footer{
+  position: absolute;
+  bottom: 0;
+}
+/* it ends here (css code for index page ) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  margin: 0;
+  min-width: 650px;
+  padding: 0;
+}
+
+header {
+  width: 100%;
   margin: 0 auto;
 }
 
-main{
-  max-width: 960px;
+main {
+  max-width: 100%;
   margin: 0 auto;
 }
 p {
   font-family: var(--paragraph-font);
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
@@ -47,8 +152,8 @@ header {
   background-color: var(--primary-color);
   display: grid;
   grid-template-columns: 1fr 1fr;
-	align-items: center;
-  padding: .5em;
+  align-items: center;
+  padding: 0.5em;
 }
 
 header img {
@@ -65,28 +170,34 @@ header nav {
 header nav a {
   color: var(--additional-accent-color);
   text-decoration: none;
+  transition: all ease 1s;
   font-size: 100%;
   text-align: center;
-  padding: .5em;
+  padding: 0.5em;
   width: 7em;
 }
 
-nav a:hover{
-  border-radius: 5px;
-  color: var(--navigation-hover-link-color);
-  background: var(--navigation-hover-background-color);
+nav a:hover {
+  border-radius: 1px;
+  color: var(--additional-accent-color);
+  border-bottom:1px solid var(--accent-color);
 }
 
 .hero {
   position: relative;
-  margin-top: .2em;
+  margin-top: 0.2em;
 }
 
-.hero img{
+.hero img {
   display: block;
   background-position: center;
   width: 100%;
   height: 15rem;
+}
+
+.hero p {
+  font-weight: 700;
+  font-variant: small-caps;
 }
 
 .hero h1 {
@@ -95,7 +206,7 @@ nav a:hover{
   height: auto;
   top: 0;
   padding: 10px;
-  color: var(--additional-accent-color);
+  color: var(--accent-color);
   width: 100%;
 }
 
@@ -110,10 +221,9 @@ article {
   top: 30%;
 }
 
-article p{
+article p {
   font-size: 90%;
 }
-
 
 .neat img {
   float: right;
@@ -122,14 +232,18 @@ article p{
   height: auto;
 }
 
-.section1, .section2 {
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-  background-color: var(--secondary-color);
+.section1,
+.section2 {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--primary-color);
+  color: var(--additional-accent-color);
   margin-top: 5%;
 }
 
-.section1 h2, .section2 h2{
+.section1 h2,
+.section2 h2 {
   padding: 1%;
+  color: var(--accent-color);
   text-align: center;
 }
 
@@ -146,245 +260,263 @@ article p{
 }
 .grid_container2 {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
-.grid_container2 img{
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), -3px -3px 5px rgba(0, 0, 0, 0.5);
-  width: 10em;
+.grid_container2 figcaption{
+  text-align: center;
+  color: var(--accent-color);
+  padding: 1em;
+}
+
+.grid_container2 img {
+  border-radius: 5px;
+  min-width: 100px;
+  width: 90%;
   height: auto;
 }
 
 .img_container {
   padding: 1%;
 }
- 
-.img_container img{
+
+.img_container img {
   width: 150px;
   height: auto;
 }
 
-footer{
+footer {
   width: 100%;
+  /* position: absolute; */
   display: flex;
+  /* bottom: 0; */
   margin-top: 5%;
   background-color: var(--primary-color);
   color: var(--additional-accent-color);
   justify-content: space-around;
   align-items: center;
 }
-.navlinks{
+.navlinks {
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   align-items: center;
 }
 
-.navlinks img{
-  height:10%;
+.navlinks img {
+  height: 10%;
   cursor: pointer;
   width: 10%;
-} 
+}
 
-.navlinks a{
+.navlinks a {
   position: absolute;
   visibility: hidden;
-} 
-
-
-/*this styles our contact_Us page*/
-main h3,h4{ 
-  padding: 10px;
-  margin-top: 2rem;
 }
 
-
-main p {
-  padding: 2px;
+/* 
+/* this css code styles the contact us page
+this css code styles the form container and its element*/
+.contact_info_container {
+  width: 100%;
+  /* min-width: 600px; */
+  display: flex;
 }
 
-main #heading{
-  padding: 5px;
+#get_intouch{
+  font-size: 25px;
   font-weight: 700;
+  font-variant: small-caps;
   color: var(--primary-color);
+  padding: .5em;
+}
+
+.contact_info {
+  padding: .5em;
+}
+
+.contact_info h1{
+font-variant: small-caps;
+font-size: 22px;
+padding: .5em;
+}
+
+.contact_info figure{
+  color: var(--additional-accent-color);
+  background-color: var(--accent-color);
+  font-size: 20px;
+  padding: .5em;
+  font-variant: small-caps;
+}
+
+.contact_info figcaption{
+  padding: .2em;
+  border: 1px solid var(--primary-color);
+}
+
+.workers_container{
+  font-size: 90%;
+  width: 100%;
+}
+
+
+ .workers_img{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--additional-accent-color);
+  color: var(--primary-color);
+  padding: .5em;
+  width: 100%;
+}
+
+.workers_container p{
+  text-align: center;
+  padding: .5em;
+}
+
+.workers_img img{
+  border-radius: 5px;
+  margin-left: 4px;
+  min-width: 100px;
+  width: 80%;
+  display: inline;
+}
+
+.workers_img figcaption{
+  text-align: center;
+}
+
+.form_map_container{
+  color: var(--additional-accent-color);
+  background-color: var(--primary-color);
+  justify-content: center;
+  margin: 30px 0px 0px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row ;
+}
+
+.map_container{
+  padding: .5em;
+}
+
+.form_container {
+  background-color: var(--accent-color);
+  width: 600px;
+  height: 448px;
+  margin:10px 0px 0px 0px ;
+  padding: .5em;
+}
+
+.form_container label{
+  font-variant: small-caps;
+}
+
+#form_heading{
+  color: var(--additional-accent-color);
   font-size: 25px;
   font-variant: small-caps;
 }
-main h4{
-  margin-top: 2rem;
-}
 
-/* this css code styles the contact us page
-this css code styles the form container and its element*/
-.form_map_container{
-  display: grid;
-  padding: 10px;
-  border: 5px solid var(--primary-color);
-  flex-wrap: wrap;
-  grid-auto-flow: column;
-  background-color: var(--secondary-color);
-  grid-template-columns: 1fr 2fr;
-  gap: 2em;
-}
-
-iframe {
-  border: 0;
-  padding: 3px;
-  background-color: var(--primary-color);
-}
-
-.form_container{
-  background-color: var(--secondary-color);
-  width: 450px;
-}
-
-.form_container input{
-  padding: 1em;
-  margin: 5px;
-  outline: none;
-  border: none;
-}
-
-.form_container input:focus{
-  border: 2px solid var(--primary-color);
-}
-
-
-#email {
-  margin-left: 2.8em;
-}
-
-.form_container textarea{
-  width: 280px;
-}
-
-.radio_container {
-  margin-bottom: 2em;
-}
-
-.form_container #form_heading{
-  font-variant: small-caps;
-}
-
-.contact_info_container{
-  display: grid;
+.form_container input, textarea{
   padding: .5em;
-  margin: 20px 0px 20px 0px;
-  grid-template-columns: 1fr 2fr;
-  gap: 2em;
-  background-color:var(--secondary-color);
+  outline: none;
 }
 
-.contact_info_container h1, #form_heading{
-  color: var(--primary-color);
-  /* margin-top: .2em; */
-  font-size: 20px;
-  font-variant: small-caps;
+.radio_container{
+  margin: 1em 0em 1em 0em;
+  padding: .5em;
 }
 
-.contact_info_container p{
-  margin: 0;
-  padding: 0;
-}
-
-.contact_details {
-  background-color:var(--primary-color);
-  border-radius: 5px;
-  color: var(--additional-accent-color);
-}
-
-.contact_details h4{
-  color: var(--additional-accent-color);
-  margin-top: 0;
+.form_container input[type="text"], textarea{
+  display: block;
+  width: 400px;
 }
 
 .form_container button{
-  border: none;
-  outline: none;
-  padding: 1em;
-  color: var(--additional-accent-color);
-  background-color: var(--primary-color);
-  cursor: pointer;
-}
-
-/*this edit the three images and its elements*/
-.workers_img {
-  grid-column: 2;
-  grid-row: 1/5;
-}
-
-figure {
-  margin: 0;
   padding: .5em;
-  display: inline-block;
+  margin-top: 1em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: var(--additional-accent-color);
+  color: var(--primary-color);
+  transition: all ease 1s;
 }
 
+.form_container button:hover{
+  background-color: var(--navigation-background-color);
+  color: var(--navigation-link-color);
+}
 
 /* trips css code here */
-.trips_container{
-  background-color:var(--secondary-color);
+.trips_container {
+  background-color: var(--secondary-color);
+  max-width: 100%;
 }
 
-
-.trips_container p, a{
+.trips_container p,
+a {
   padding: 1em;
   font-size: 20px;
 }
 
 .trips_description {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.trips_container figcaption{
+.trips_container figcaption {
   text-align: center;
+  font-size: 80%;
 }
 
-.trips_description img {
-  padding: 4px;
-  border-radius: 10px;
-  max-width: 300px;
+.trips_description img  {
+  padding: .5em;
+  border-radius: 20px;
+  width: 92%;
   height: auto;
 }
 
-.trips_container table{
+.trips_container table {
   margin-top: 1em;
   border-collapse: collapse;
   border-spacing: 0;
   padding: 0;
 }
 
-.trips_container th{
-  background-color: var(--primary-color);
+.trips_container th {
+  border: 1px solid var(--additional-accent-color);
+  background-color: var(--accent-color);
   color: var(--additional-accent-color);
   font-variant: small-caps;
-  font-size: 20px;
+  font-size: 15px;
   padding: 1em;
-
 }
 
-.trips_container td{
-
+.trips_container td {
   width: 300px;
   padding: 2em;
 }
-.trips_container td::before{
+.trips_container td::before {
   content: "\2714"; /* checkmark symbol */
   font-size: 16px;
   color: green;
-
 }
 
 /* this styles the INDEX.HTML PAGE site */
 .background-image {
-  background-image: url('images/index.png');
-  background-size: cover;
-  background-position: center;
-  height: 150vh; /* Make the background image full height */
-  width: 100%; /* Make the background image full width */
-  position: relative; /* Position the background image relative to its parent */
+  position: relative;
+  height: auto;
+  width: 100%;
 }
 
+.background-image img {
+  position: absolute;
+  opacity: .2;
+}
 
+.background-image header{
+  color: var(--additional-accent-color);
+  font-size: 30px;
+}
