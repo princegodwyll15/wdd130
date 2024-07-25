@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cousine&display=swap");
 :root {
   --paragraph-font: "roboto", sans-serif;
-  --primary-color: #03045e;
+  --primary-color: #6600CC;
   --secondary-color: #e9f1f5;
   --accent-color: rgb(255, 31, 191);
   --additional-accent-color: #fff;
@@ -266,7 +266,8 @@ article p {
 
 .grid_container2 figcaption{
   text-align: center;
-  color: var(--accent-color);
+  font-weight: 700;
+  color: var(--additional-accent-color);
   padding: 1em;
 }
 
@@ -410,7 +411,6 @@ padding: .5em;
 }
 
 .form_container {
-  background-color: var(--accent-color);
   width: 600px;
   height: 448px;
   margin:10px 0px 0px 0px ;
@@ -472,6 +472,7 @@ a {
 }
 
 .trips_description {
+  padding: .5em;
   display: flex;
   justify-content: center;
 }
@@ -482,15 +483,16 @@ a {
 }
 
 .trips_description img  {
-  padding: .5em;
+  background-color: var(--primary-color);
+  padding: .2em;
   transition: transform 0.5s ease-in-out;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 92%;
   height: auto;
 }
 
 .trips_container img:hover{
-  transform: scale(.9);
+  transform: scale(1.02);
   border: 2px solid var(--accent-color);
 }
 
